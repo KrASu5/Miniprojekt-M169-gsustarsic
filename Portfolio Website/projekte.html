@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio Gabriel Sustarsic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navDesktop">
+            <ul>
+                <li>
+                    <a href="verzeichnisse.html">Quellen und Verzeichnis</a> 
+                 </li>
+                <li>
+                    <a href="iperka.html">IPERKA</a>
+                </li>
+                <li>
+                    <a href="projekte.html">Projekte</a>
+                </li>
+                <li>
+                    <a href="organisation.html">Organisation</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="navMobile">
+            <a class="active">E-Portfolio</a>
+            <div id="seitenLinks">
+
+                <a href="index.html">Home</a>
+                <a href="organisation.html">Organisation</a>
+                <a href="projekte.html">Projekte</a>
+                <a href="iperka.html">IPERKA</a>
+                <a href="verzeichnisse.html">Quellen und Verzeichnis</a>
+
+
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
+
+        <script>
+            function menu() {
+                var links = document.getElementById("seitenLinks");
+                if (links.style.display === "block") {
+                    links.style.display = "none";
+                } else {
+                    links.style.display = "block";
+                }
+            }
+        </script>
+
+
+    </header>
+
+    <div class="seitenInhalt">
+        <h1>Projekt</h1>
+        <hr>
+
+        <div id="planung1" class="aufgabeGrp">
+            <div class="beschreibung">
+                <b>Arbeitsauftrag: Phasenablauf IT-Projekt</b>
+                <br><br>
+                <i>
+                    1) Überlegen Sie sich fünf Aufträge, die Sie in Ihrem Lehrbetrieb ausgeführt
+                    haben, aktuell am Bearbeiten sind oder zukünftig ausführen werden.
+                </i>
+                <br><br>
+                <i>
+                    2) Beschreiben Sie diese Aufträge detailliert und ordnen Sie diese einer Projektphase zu. Begründen
+                    Sie Ihre Zuordnung.
+                </i>
+                <br><br>
+                <i>
+                    3) Haben Sie in der Sekundarschule ein Projekt durchgeführt? Beschreiben
+                    Sie dieses und Ihre Erfahrungen damit. Was für Punkte haben Sie in diesem Projekt gelernt?
+                </i>
+            </div>
+            <div class="aufgabe">
+                1) Im Basislehrjahr haben wir laufend kleinere Projekte und manchmal ein grösseres. Beispiele sind:
+
+                <ul>
+                    <li>Installation Moodle</li>
+                    <li>HTML/PHP Seite</li>
+                    <li>Hyper-V aufsetzen</li>
+                    <li>eine Vorlage für Word erstellen</li>
+                </ul>
+                <br><br>
+
+                2) Nun gehen wir etwas ins Detail mit den Aufträgen. Da ich im Basislehrjahr ICT bin, sehen diese etwas
+                anders aus als in einem "echten" Betrieb.
+                <br><br>
+                Installlation Moodle:
+
+                <table>
+                    <tr>
+                        <th>Schritt</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <td>Inizialisierung</td>
+                        <td>
+                            Diesen Auftrag bekamen wir im BLJ: <br>
+                            Die Firma "IT-Kurse AG" will in den Kursen ein Moodle einsetzen.
+                            Dies soll den Teilnehmern ermöglichen die Kurse auch von zu Hause aus 
+                            zu besuchen. Da die "IT Kurse AG" über kein eigenes Rechenzentrum verfügt,
+                            möchten Sie das LMS auf Azure betreiben.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Konzept</td>
+                        <td>Ich informiere mich zunächst auf der Webseite von Moodle, wie man es installiert und welche
+                            Voraussetzungen gegeben sein müssen. Anschliessend Plane ich alle Arbeitsschritte
+                            in einem kurzen Ablauf.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Realisierung</td>
+                        <td>Ich realisiere die Moodle-Installation gemäss meinem Plan. Ausserdem Kontrolliere ich noch meine
+                            Installation, indem ich ein paar Kurskategorien und entsprechende Kurse erstelle.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Einführung</td>
+                        <td>Eine Einführung gab es nicht wirklich, es wurde einfach dem Betreuer gezeigt und aufs Moodle
+                            hochgeladen. </td>
+                    </tr>
+                </table>
+                <br><br>
+
+                HTML/PHP-Seite:
+
+                <table>
+                    <tr>
+                        <th>Schritt</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <td>Inizialisierung</td>
+                        <td>Dieser Auftrag war Vorgegeben vom Basislehrjahr:
+                            <br>
+                            "Erstelle ein Autohausverwaltungstool, indem Personen und deren Auto verwaltet werden (ohne
+                            Datenbank). Erstelle dieses Tool mit Hilfe von Klassen. Erstelle dazu ein Eingabeformular
+                            (kundenfreundlich), damit du Kunden und deren Autos erfassen kannst."
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Konzept</td>
+                        <td>
+                            Geplant wurde wieder ein Klassendiagramm und das Design der Seite, um diese möglichst
+                            Kundenfreundlich zu gestalten.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Realisierung</td>
+                        <td>
+                            Zuerst schrieb ich die HTML-Seite und verschönerte diese mit CSS und anschliessend baute ich
+                            PHP ein und testete aus.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Einführung</td>
+                        <td>Hochladen aufs Moodle.</td>
+                    </tr>
+                </table>
+                <br><br>
+                Hyper-V aufsetzen:
+
+                <table>
+                    <tr>
+                        <th>Schritt</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <td>Inizialisierung</td>
+                        <td>Dieser Auftrag war auch Vorgegeben vom Basislehrjahr: <br>
+                            "Erstelle auf einem Server vom RZ einen Microsoft Hyper-V Server. Eigne dir das Wissen über
+                            den Hyper-V Server an und probiere auf einem echten System, ob es funktioniert.
+                            Dokumentiere es für dich und beschreibe die Installation, Konfiguration und Einstellungen
+                            so, dass man dieses Dokument an einen Dritten abgeben könnte und dieser keine Fragen mehr
+                            hat. Beschreibe auch die Eigenschaft vom Hyper-V Server, was ist speziell an dieser
+                            Serverinstallation. Wichtiger Hinweis: Auf den HP G5-Servern kann maximal Windows 2012 R2
+                            für Hyper-V verwendet werden.(Kompatibilität mit SLAT)"</td>
+                    </tr>
+                    <tr>
+                        <td>Konzept</td>
+                        <td>
+                            Ich suchte nach Informationen und einem Tutorial, um den Server einfacher aufzusetzen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Realisierung</td>
+                        <td>
+                            Ich folgte dem Tutorial und Setzte den Server auf
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Einführung</td>
+                        <td>Hochladen aufs Moodle.</td>
+                    </tr>
+                </table>
+                <br><br>
+
+                eine Vorlage für Word erstellen:
+                <table>
+                    <tr>
+                        <th>Schritt</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                    <tr>
+                        <td>Inizialisierung / Konzept</td>
+                        <td>
+                            Diese Aufträge standen ganz am Anfang des Jahres und wir folgten deshalb Schritt für Schritt
+                            den Erklärungen der Betreuer. Deshalb werde ich auf diesen Auftrag auch nicht genauer
+                            eingehen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Realisierung</td>
+                        <td>
+                            Den Anweisungen Folgen
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Einführung</td>
+                        <td>Hochladen aufs Moodle.</td>
+                    </tr>
+                </table>
+                <br>
+                <i>alle in "" geschriebenen Aufträge sind aus unserem BLJ-Moodle unter
+                    https://lernen.zbw.ch/</i>
+
+            </div>
+        </div>
+    
+        <hr>
+        <div id="planung2" class="aufgabeGrp">
+            <div class="beschreibung">
+                <b>
+                    Arbeitsauftrag: Projektrollen und deren Aufgaben, Kompetenzen
+                    und Verantwortlichkeiten
+                </b>
+                <br><br>
+                <i>
+                    1) Überlegen Sie sich drei verschiedene Rollen in einem Projekt und beschreiben Sie diese.
+                </i>
+                <br><br>
+                <i>
+                    2) Ergänzen Sie zu jeder gefundenen Rolle eine Tabelle mit den Aufgaben,
+                    Kompetenzen und Verantwortungen.
+                </i>
+            </div>
+
+            <div class="aufgabe">
+                In einem Projekt, dass wir im BLJ durchgeführt haben, bestand aus drei Rollen:
+
+                <ul>
+                    <li>Zuständiger Servermanager für Firma A</li>
+                    <li>Zuständiger Servermanager für Firma B</li>
+                    <li>Zuständiger Servermanager für Firma C</li>
+                </ul>
+                
+                Eine grosse IT-Firma (Firma A) hat zwei kleinere Hardware-Distributoren (Firma B und C) im 
+                Ausland gekauft. Nun gilt es die Firmen IT-technisch zusammenzuführen. Jede der 3 Firmen bietet eigenen
+                Serverdienste an, die teilweise von den anderen Firmen benutzt werden sollen.
+                <br><br>
+
+                Ich beschreibe nun die Tätigkeiten dieser drei Rollen:
+
+                <br><br>
+                <b>Zuständiger Servermanager für Firma A</b>
+                <br><br>
+                Er betreibt den Domänencontroller der Firma A, der auch Server für Druck- und Dateifreigaben ist.
+                <br><br>
+                <b>Zuständiger Servermanager für Firma B</b>
+                <br><br>
+                Er betreibt einen Webserver auf den alle Mitarbeiter der Hauptfirma A zugreifen können.
+                Auch die Domäne der Firma C soll als Subdomain an die Domain der Firma A angeschlossen werden.
+                <br><br>
+                <b>Zuständiger Servermanager für Firma C</b><br>
+                <br>
+                Er betreibt zwei Webserver auf den alle Mitarbeiter der Hauptfirma A ebenfalls zugreifen können.
+                <br><br>
+                Zuständiger Servermanager für Firma A:
+                <table>
+                    <tr>
+                        <th>
+                            Aufgabe
+                        </th>
+                        <td>
+                            -einen Domänencontroller aufsetzen<br>
+                            -Server für Druck- und Dateifreigaben aufsetzen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Kompetenz</th>
+                        <td>
+                            -kann Domänencontroller aufsetzen <br>
+                            -kann Server für Druck- und Dateifreigaben aufsetzen<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Verantwortung</th>
+                        <td>
+                            -ist Verantwortlich für sämtliche Prozesse der Firma A
+                        </td>
+                    </tr>
+
+                </table>
+                <br><br>
+
+                Zuständiger Servermanager für Firma B:
+                <table>
+                    <tr>
+                        <th>
+                            Aufgabe
+                        </th>
+                        <td>
+                            -hängt die Firma B mittels Subdomain an die Firma</A><br>
+                            -erstellt einen Webserver, auf den alle Mitarbeiter der Firma A angeschlossen werden<br>
+                            -Die Domäne der Firma C soll ebenfalls mittels Subdomain angeschlossen werden<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Kompetenz</th>
+                        <td>
+                            -Kann Server an eine Subdomain hängen<br>
+                            -Kann einen Webserver aufsetzen
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Verantwortung</th>
+                        <td>
+                            -ist Verantwortlich für sämtliche Prozesse der Firma B
+                        </td>
+                    </tr>
+
+                </table>
+                <br><br>
+
+                Zuständiger Servermanager für Firma C:
+                <table>
+                    <tr>
+                        <th>
+                            Aufgabe
+                        </th>
+                        <td>
+                            -betreibt zwei Webserver auf den alle Mitarbeiter der Hauptfirma A ebenfalls zugreifen können<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Kompetenz</th>
+                        <td>
+                            -Kann Webserver aufsetzen
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Verantwortung</th>
+                        <td>
+                            -ist Verantwortlich für sämtliche Prozesse der Firma C
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <address>
+            E-Portfolio <br>
+            Gabriel Sustarsic <br>
+            09.05.2022 <br>
+        </address>
+    </footer>
+</body>
+
+</html>

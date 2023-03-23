@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Portfolio Gabriel Sustarsic</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+    
+        <header>
+            <div class="navDesktop">
+                <ul>
+                    <li>
+                        <a href="verzeichnisse.html">Quellen und Verzeichnis</a> 
+                     </li>
+                    <li>
+                        <a href="iperka.html">IPERKA</a>
+                    </li>
+                    <li>
+                        <a href="projekte.html">Projekte</a>
+                    </li>
+                    <li>
+                       <a href="organisation.html">Organisation</a> 
+                    </li>
+                    <li>
+                       <a href="index.html">Home</a> 
+                    </li>
+                </ul>
+    
+            </div>
+    
+            <div class="navMobile">
+                <a  class="active">E-Portfolio</a>
+                <div id="seitenLinks">
+    
+                    <a href="index.html">Home</a>
+                    <a href="organisation.html">Organisation</a>
+                    <a href="projekte.html">Projekte</a>
+                    <a href="iperka.html">IPERKA</a>
+                    <a href="verzeichnisse.html">Quellen und Verzeichnis</a>
+    
+    
+    
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            </div>
+    
+            <script>
+                function menu() {
+                    var links = document.getElementById("seitenLinks");
+                    if (links.style.display === "block") {
+                        links.style.display = "none";
+                    } else {
+                        links.style.display = "block";
+                    }
+                }
+            </script>
+    
+    
+        </header>
+        <div class="seitenInhalt">
+            <h1>IPERKA</h1>
+            <hr>
+            <div id="iperka1" class="aufgabeGrp">
+                <div class="beschreibung">
+                    <b>Arbeitsauftrag: Aufgaben und Aufträge im Lehrbetrieb</b>
+                    <br><br>
+                    <i>
+                        1) Recherchieren Sie im Internet die einzelnen Schritte zum IPERKA-Modell.
+                        Notieren Sie sich zu jedem Schritt Stichworte.
+                    </i>
+                    <br><br>
+                    <i>
+                        2) Überlegen Sie sich praktische Beispiele zu den einzelnen Schritten. 
+                        Welche Aufträge oder Arbeiten haben Sie in letzter Zeit erledigt 
+                        und in welchen Schritten sind diese anzusiedeln?
+                    </i>
+                    <br>
+                </div>
+    
+                <div class="aufgabe">
+                    <b>Informieren</b>
+                    <br>
+                    In diesem Schritt befasst man sich mit der Ausgangslage des Auftrags oder dem Projekt. Was verlangt der Auftraggeber? Was muss das Resultat aufweisen? Wie viel darf es am schluss höchstens kosten?
+                    Unser Auftrag war es einen Moodle Server aufzusetzen, auf dem wir schliesslich Moodle installieren und einrichten. Wir sollen zwei Kategorien mit jeweils drei Kursen erstellen.
+                    Wir haben also die Anforderungen:
+                    <ul>
+                        <li>
+                            Server mit funktionierendem Moodle.
+                        </li>
+                        <li>
+                            Moodle eingerichtet mit zwei Kategorien à drei Kursen.
+                        </li>                      
+                    </ul>
+                    Der Moodle Server soll auf einem dedizierten Cloud-Server basieren.    
+                    Als Lösung dafür verwenden wir Azure, da wir gerade zu Beginn 200 CHF Guthaben zur Verfügung haben.
+                    <br><br>
+
+                    <b>Planen</b>
+                    <br>
+                    Nun planen wir verschiedene Lösungsvarianten. Welche Möglichkeiten stehen uns zur Verfügung, um zur Ausgangslage zu gelangen? Wir listen diese Möglichkeiten auf. Zusätzlich können wir auch einen Zeitplan erstellen.
+                    Für den Moodle Server müssen wir uns zuerst für ein Serverbetriebssystem entscheiden. Dieses entscheidet auch welche Dienste wir im Anhang installieren.
+                    Wollen wir lieber Windows Server mit IIS und Microsoft SQL oder lieber Ubuntu Server mit Apache2 und MariaDB bzw. MySQL.
+                    <br><br>
+                    Wie lange benötigen wir für die einzelnen Arbeitsschritte?
+                    <br>
+                    → Zeitplan erstellen.
+                    <br><br>
+                    
+                    <b>Entscheiden</b>
+                    <br>
+                    Anhand diversen Lösungsvarianten können wir uns für eine Variante entscheiden. Falls dies schwierig wird, gäbe es die Nutzwertanalyse.
+                    In der Nutzwertanalyse werden verschiedene Varianten verglichen und anhand bestimmer Kriterien bewertet.
+                    Für uns war das allerdings kein Thema, da wir bereits Erfahrungen mit beiden Betriebssystemen hatten und lieber gleich zu Ubuntu griffen.
+                    Darauf soll MariaDB mit Apache2, PHP und GIT installiert werden.
+                    <br>
+                    GIT ist dafür da, um das Moodle-Paket schnell und einfach aus dem Internet in das entsprechende Verzeichnis zu klonen. Dies geht einfacher als das mühsame entzippen einer riesigen ZIP-Datei.
+                    <br><br>
+
+                    <b>Realisieren</b>
+                    <br>
+                    Die Lösungsvariante wird nun genau so umgesetzt, wie diese geplant wurde. Falls es Änderungen geben sollte bei der Umsetzung, sollte dies dem Chef kommuniziert werden.
+                    Also haben wir einen Azure Server gemietet und alles nötige mitkonfiguriert, anschliessend alle Dienste installiert und dann Moodle installiert, dieses eingerichtet und die Kategorien mit den jeweiligen Kursen erstellt.
+                    <br><br>
+                    
+                    <b>Kontrollieren</b>
+                    <br>
+                    Um sich zu vergewissern, dass alles sauber ging, muss man das Realisierte kontrollieren. Sind die Anforderungen erfüllt? Steht die Ausgangslage so da wie erwartet?  Funktioniert alles im grünen Bereich? Schwierig hierbei ist vorallem zu wissen, ob es so funktioniert wie es funktionieren sollte, da man möglicherweise nicht das nötige Fachwissen hat. Ist der Vorgesetzte momentan nicht in der Nähe, wird es schwierig die Situation zu beurteilen.
+                    Wir mussten testen, ob man von ausserhalb auf diesen Moodle Server zugreifen konnte, ob man sich anmelden konnte und die jeweiligen Kurse besuche konnte.
+                    Ob wir unser Moodle so gestaltet haben wie erwünscht, wussten wir nicht, da wir nicht eine 100 prozentig konkrete Aufgabenstellung bekommen haben und daher Spielraum für unsere eigenen Besonderheiten hatten. 
+                    <br><br>
+
+                    <b>Auswerten</b>
+                    <br>
+                    Gibt es Verbesserungsvorschläge? Was ist gut gegangen? Was würde ich wieder so machen? Was würde ich nächstes Mal besser machen?
+                    
+                    Da uns eigentlich nur Azure zur Verfügung stand, war dieser Anbieter auch in Ordnung, jedoch eigentlich trotzdem teuer.
+                    <br>
+                    Hostpoint wäre da besser.
+                    <br>
+                    Ubuntu war die richtige Entscheidung.
+                    <br><br>
+                    Die Installation verlief glatt und Moodle liess sich sauber einrichten. 
+                </div>
+            </div>
+
+
+    <footer>
+        <address>
+            E-Portfolio <br>
+            Gabriel Sustarsic <br>
+            09.05.2022 <br>
+            </address>
+    </footer>
+</body>
+</html>

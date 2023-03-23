@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio Gabriel Sustarsic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navDesktop">
+            <ul>
+                <li>
+                    <a href="verzeichnisse.html">Quellen und Verzeichnis</a> 
+                 </li>
+                <li>
+                    <a href="iperka.html">IPERKA</a>
+                </li>
+                <li>
+                    <a href="projekte.html">Projekte</a>
+                </li>
+                <li>
+                    <a href="organisation.html">Organisation</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="navMobile">
+            <a class="active">E-Portfolio</a>
+            <div id="seitenLinks">
+
+                <a href="index.html">Home</a>
+                <a href="organisation.html">Organisation</a>
+                <a href="projekte.html">Projekte</a>
+                <a href="iperka.html">IPERKA</a>
+                <a href="verzeichnisse.html">Quellen und Verzeichnis</a>
+
+
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
+
+        <script>
+            function menu() {
+                var links = document.getElementById("seitenLinks");
+                if (links.style.display === "block") {
+                    links.style.display = "none";
+                } else {
+                    links.style.display = "block";
+                }
+            }
+        </script>
+
+
+    </header>
+
+    <div class="seitenInhalt">
+        <h1>Quellen und Verzeichnisse</h1>
+        <hr>
+        <h2 class="quellen">Inhalt</h2>
+        <div class="verzeichnisse">
+            <div class="quellenBox">
+                <a href="organisation.html">
+                    <h2>Organisation</h2>
+                </a>
+                <a href="organisation.html#organisation1">
+                    Aufgaben und Aufträge im Lehrbetrieb
+                    <p>Ämtli von Website: https://nas/intranet/blj-guide/</p>
+                </a>
+                <br><br>
+                <a href="organisation.html#organisation2">
+                    Unterscheidung Aufbau und Ablauforganisation
+                    <p>Informationsquelle: https://studyflix.de/wirtschaft/aufbau-und-ablauforganisation-1691</p>
+                </a>
+                <br><br>
+                <a href="organisation.html#organisation3">
+                    Projektantrag
+                    <p>Projekt von: https://lernen.zbw.ch/login/index.php</p>
+                </a>
+            </div>
+            <div class="quellenBox">
+                <a href="projekte.html">
+                    <h2>Projekte</h2>
+                </a>
+                <a href="projekte.html#planung1">
+                    Phasenablauf IT-Projekt
+                    <p>Sämtliche Projekte von: https://lernen.zbw.ch/login/index.php</p>
+                </a>
+                <br><br>
+                <a href="projekte.html#planung2">
+                    Projektrollen und deren Aufgaben, Kompetenzen und Verantwortlichkeiten
+                    <p>Projekt von: https://lernen.zbw.ch/login/index.php</p>
+                </a>
+            </div>
+            <div class="quellenBox">
+                <a href="iperka.html">
+                    <h2>IPERKA</h2>
+                </a>
+                <a href="iperka.html#iperka1">
+                    Aufgaben und Aufträge im Lehrbetrieb
+                    <p>https://www.bexio.com/de-CH/blog/view/iperka-methode</p>
+                </a>
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="quellen">Bildverzeichnis</h2>
+
+
+        <div class="verzeichnisse">
+            <div class="quellenBox">
+                <a href="organisation.html">
+                    <h2>Organisation</h2>
+                </a>
+        
+                <br><br>
+                <a href="organisation.html#organisation2">
+                    Unterscheidung Aufbau und Ablauforganisation <br>   
+                    <p>- Alle Bilder selbst erstellt</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <address>
+            E-Portfolio <br>
+            Gabriel Sustarsic <br>
+            09.05.2022 <br>
+        </address>
+    </footer>
+</body>
+
+</html>

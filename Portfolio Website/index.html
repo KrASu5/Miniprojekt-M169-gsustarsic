@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio Gabriel Sustarsic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navDesktop">
+            <ul>
+                <li>
+                    <a href="verzeichnisse.html">Quellen und Verzeichnis</a> 
+                 </li>
+                <li>
+                    <a href="iperka.html">IPERKA</a>
+                </li>
+                <li>
+                    <a href="projekte.html">Projekt</a>
+                </li>
+                <li>
+                   <a href="organisation.html">Organisation</a> 
+                </li>
+                <li>
+                   <a href="index.html">Home</a> 
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="navMobile">
+            <a  class="active">E-Portfolio</a>
+            <div id="seitenLinks">
+
+                <a href="index.html">Home</a>
+                <a href="organisation.html">Organisation</a>
+                <a href="projekte.html">Projekt</a>
+                <a href="iperka.html">IPERKA</a>
+                <a href="verzeichnisse.html">Quellen und Verzeichnis</a>
+
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
+
+        <script>
+            function menu() {
+                var links = document.getElementById("seitenLinks");
+                if (links.style.display === "block") {
+                    links.style.display = "none";
+                } else {
+                    links.style.display = "block";
+                }
+            }
+        </script>
+
+
+    </header>
+
+    <div class="seitenInhalt" id="index">
+        <h1>E-Portfolio</h1>
+    </div>
+    <div id="inhaltsverzeichnis">
+        <h1>Seiteninhalt</h1>
+        
+        <hr>
+
+        
+        <a href="organisation.html"><h2>Organisation</h2></a>
+        <div class="boxInhalt">
+            
+                <a href="organisation.html#organisation1">
+                    <div>
+                        <p>
+                            Aufgaben und Aufträge im Lehrbetrieb
+                        </p>
+                    </div> 
+                </a>
+            
+           
+                <a href="organisation.html#organisation2">
+                    <div>
+                        <p>
+                            Unterscheidung Aufbau und Ablauforganisation
+                        </p>
+                    </div>
+                </a>
+            
+            
+                <a href="organisation.html#organisation3">
+                    <div>
+                        <p>
+                            Projektantrag
+                        </p>
+                    </div>
+                </a>                        
+    </div>
+    <hr>
+    <div>
+    <a href="projekte.html"><h2>Projekte</h2></a>
+                    <div class="boxInhalt">
+                        
+                <a href="projekte.html#planung1">
+                    <div>
+                        <p>
+                            Arbeitsauftrag: Phasenablauf IT-Projekt
+                        </p>
+                    </div> 
+                </a>
+                        
+                       
+                <a href="projekte.html#planung2">
+                    <div>
+                        <p>
+                            Arbeitsauftrag: Projektrollen und deren Aufgaben, Kompetenzen und Verantwortlichketien
+                        </p>
+                    </div>
+                </a>
+    </div>
+    <hr>
+    <div>
+        <a href="iperka.html"><h2>IPERKA</h2></a>
+                        <div class="boxInhalt">
+                            
+                    <a href="iperka.html#iperka1">
+                        <div>
+                            <p>
+                                Arbeitsauftrag: Übersicht IPERKA
+                            </p>
+                        </div> 
+                    </a>
+    </div>
+
+    <footer>
+        <address>
+            E-Portfolio <br>
+            Gabriel Sustarsic <br>
+            09.05.2022 <br>
+        </address>
+    </footer>
+</body>
+
+</html>
