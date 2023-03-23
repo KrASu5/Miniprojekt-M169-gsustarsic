@@ -14,8 +14,9 @@ COPY /vmadmin/Website/style.css /var/www/html/website
 COPY /vmadmin/Website/verzechnisse.html /var/www/html/website 
 RUN	sudo chown -R $USER:$USER /var/www/html/website && \
 	sudo chmod -R 755 /var/www/html/test && \
-	sudo nano /etc/apache2/sites-available/website.conf
+	sudo nano /etc/apache2/sites-available/website.conf && \
 	sudo a2ensite website.conf && \
 	sudo systemctl enable apache2 && \
 	sudo systemctl reload apache2 && \
+EXPOSE 8080
 CMD ["/bin/bash"]
